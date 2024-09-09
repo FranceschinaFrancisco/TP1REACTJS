@@ -3,6 +3,9 @@ import './App.css';
 import espadaEnPiedra from './assets/espadaEnPiedra.png';
 import espada from './assets/espada.png';
 
+//Hice el juego con esta temática porque me gustan los videojuegos y quería darle un toque de unicidad a la propuesta.
+//Los assets de espada.png y espadaenpiedra.png los dibuje yo mismo.
+
 function App() {
   const [number, setNumber] = useState(Math.floor(Math.random() * 20) + 1);
   const [guess, setGuess] = useState('');
@@ -51,7 +54,7 @@ function App() {
         className="input"
         min="1"
         max="20"
-        disabled={won} // Deshabilita el input si se ha ganado
+        disabled={won}
       />
       <div className="button-container">
         {won ? (
